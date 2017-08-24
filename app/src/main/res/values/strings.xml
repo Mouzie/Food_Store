@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Food Store</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- Strings for the app -->
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="cPassword">Confirm Password</string>
+
+    <!-- Button Strings -->
+    <string name="order">Order</string>
+    <string name="signin">Sign in</string>
+
+    <!-- Other strings-->
+    <string name="login">Login</string>
+    <string name="forgot">Forgot Password</string>
+
+    <!-- My titles -->
+    <string name="register">Register</string>
+    <string name="profile">Profile</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+
+</resources>
