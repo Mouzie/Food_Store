@@ -21,11 +21,10 @@
         android:textSize="20dp"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
         android:layout_below="@+id/toolbar"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="80dp"/>
+        android:layout_toLeftOf="@+id/txtName"
+        android:layout_toStartOf="@+id/txtName"
+        android:layout_marginTop="52dp" />
 
     <EditText
         android:layout_width="250dp"
@@ -39,16 +38,37 @@
         android:layout_marginEnd="13dp" />
 
     <TextView
+        android:id="@+id/tvEmail"
+        android:text="@string/email"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSurname"
+        android:layout_toLeftOf="@+id/txtEmail"
+        android:layout_toStartOf="@+id/txtEmail"
+        android:layout_marginTop="28dp" />
+
+    <EditText
+        android:hint="@string/email"
+        android:id="@+id/txtEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvEmail"
+        android:layout_alignLeft="@+id/txtSurname"
+        android:layout_alignStart="@+id/txtSurname" />
+
+    <TextView
         android:id="@+id/tvSurname"
-        android:layout_marginTop="38dp"
         android:textStyle="bold"
         android:textSize="20dp"
         android:text="@string/surname"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvName"
-        android:layout_alignLeft="@+id/tvName"
-        android:layout_alignStart="@+id/tvName" />
+        android:layout_toLeftOf="@+id/txtUsername"
+        android:layout_toStartOf="@+id/txtUsername"
+        android:layout_marginTop="30dp" />
 
     <EditText
         android:id="@+id/txtSurname"
@@ -66,10 +86,10 @@
         android:textSize="20dp"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvSurname"
-        android:layout_alignLeft="@+id/tvSurname"
-        android:layout_alignStart="@+id/tvSurname"
-        android:layout_marginTop="39dp" />
+        android:layout_below="@+id/tvEmail"
+        android:layout_toLeftOf="@+id/txtSurname"
+        android:layout_toStartOf="@+id/txtSurname"
+        android:layout_marginTop="27dp" />
 
     <EditText
         android:id="@+id/txtUsername"
@@ -89,10 +109,10 @@
         android:textSize="20dp"
         android:layout_height="wrap_content"
         android:text="@string/password"
-        android:layout_marginTop="42dp"
         android:layout_below="@+id/tvUsername"
-        android:layout_alignLeft="@+id/tvUsername"
-        android:layout_alignStart="@+id/tvUsername" />
+        android:layout_toLeftOf="@+id/txtPassword"
+        android:layout_toStartOf="@+id/txtPassword"
+        android:layout_marginTop="37dp" />
 
     <EditText
         android:id="@+id/txtPassword"
@@ -120,17 +140,17 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/tvCpassword"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_toRightOf="@+id/tvCpassword"
+        android:layout_toEndOf="@+id/tvCpassword" />
 
     <Button
         android:id="@+id/btnRegistration"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvCpassword"
+        android:text="@string/register"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:text="@string/register" />
+        android:layout_marginBottom="36dp" />
 
 
 </RelativeLayout>

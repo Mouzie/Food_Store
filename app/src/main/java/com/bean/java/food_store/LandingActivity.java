@@ -24,5 +24,15 @@ public class LandingActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //Calling activity that will handle the sign in
+        btn = (Button)findViewById(R.id.Signin);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LandingActivity.this, SignInActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
