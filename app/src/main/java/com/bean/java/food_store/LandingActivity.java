@@ -33,9 +33,9 @@ public class LandingActivity extends AppCompatActivity {
         });
 
         //Glide method
-        Glide.with(this)
-                .load("drawable/logo.gif")
-                .into(imageView);
+        //Glide.with(this)
+               // .load("drawable/logo.gif")
+                //.into(imageView);
 
         //Calling activity that will handle the sign in
         btn = (Button)findViewById(R.id.Signin);

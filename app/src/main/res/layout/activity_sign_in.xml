@@ -1,10 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bean.java.food_store.SignInActivity">
+    tools:context="com.bean.java.food_store.SignInActivity"
+    android:orientation="vertical">
 
-</RelativeLayout>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:background="#fdfdfd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/login"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:id="@+id/toolbarText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp">
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="250dp"
+            android:layout_marginLeft="60dp"
+            android:inputType="textWebEmailAddress"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:hint="@string/password"
+            android:layout_width="250dp"
+            android:layout_marginLeft="60dp"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_marginLeft="60dp"
+        android:text="@string/signin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp"
+        android:id="@+id/btnSingin" />
+
+
+</LinearLayout>
